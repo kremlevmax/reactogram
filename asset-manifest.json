@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/reactogram/static/css/main.95d3ea1b.css",
+    "main.js": "/reactogram/static/js/main.bfc55c0a.js",
+    "static/js/787.55013255.chunk.js": "/reactogram/static/js/787.55013255.chunk.js",
+    "index.html": "/reactogram/index.html",
+    "main.95d3ea1b.css.map": "/reactogram/static/css/main.95d3ea1b.css.map",
+    "main.bfc55c0a.js.map": "/reactogram/static/js/main.bfc55c0a.js.map",
+    "787.55013255.chunk.js.map": "/reactogram/static/js/787.55013255.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95d3ea1b.css",
+    "static/js/main.bfc55c0a.js"
+  ]
+}
