@@ -1,17 +1,26 @@
 import { useState } from "react";
 import "./App.css";
 import ImageGrid from "./components/ImageGrid";
-import Title from "./components/Title";
 import UploadForm from "./components/UploadForm";
 import Modal from "./components/Modal";
+import Logo from "./components/Logo";
+import MessageContainer from "./components/MessageContainer";
 
 function App() {
   const [selectedImage, setSelectedImage] = useState(null);
+  const [imageFile, setImageFile] = useState(null);
+  const [error, setError] = useState(null);
 
   return (
     <div className='App'>
-      <Title />
-      <UploadForm />
+      <Logo>
+        <UploadForm setImageFile={setImageFile} setError={setError} />
+      </Logo>
+      <MessageContainer
+        error={error}
+        imageFile={imageFile}
+        setImageFile={setImageFile}
+      />
       <ImageGrid setSelectedImage={setSelectedImage} />
       {selectedImage && (
         <Modal

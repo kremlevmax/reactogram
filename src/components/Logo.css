@@ -1,0 +1,28 @@
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  position: relative;
+}
+
+svg {
+  width: 150px;
+  height: 150px;
+  animation: rotate linear 20s infinite;
+  margin: 0 auto;
+  z-index: 3;
+  background: white;
+  border-radius: 50%;
+}
+
+svg text {
+  font-size: 29px;
+  fill: var(--secondary);
+}

@@ -1,11 +1,7 @@
-import React, { useState } from "react";
-import ProgressBar from "./ProgressBar";
+import React from "react";
 import "./UploadForm.css";
 
-const UploadForm = () => {
-  const [imageFile, setImageFile] = useState(null);
-  const [error, setError] = useState(null);
-
+const UploadForm = ({ setError, setImageFile }) => {
   const supportedFileFormats = ["image/png", "image/jpeg"];
 
   const onChangeHandler = (event) => {
@@ -21,15 +17,10 @@ const UploadForm = () => {
 
   return (
     <form>
-      <input
-        type='file'
-        onChange={onChangeHandler}
-        className='upload-form__button'
-      />
-      <div className='message__container'>
-        {error && <span className='error__message'>{error}</span>}
-        {imageFile && <ProgressBar file={imageFile} setFile={setImageFile} />}
-      </div>
+      <label>
+        <input type='file' onChange={onChangeHandler} />
+        <span>+</span>
+      </label>
     </form>
   );
 };
