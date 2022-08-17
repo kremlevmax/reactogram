@@ -4,7 +4,7 @@
 
 ## Stack
 
-React, HTML, SCSS, CSS Modules, Firebase Firestore, Firebase Cloud Storage
+React, HTML, CSS, Firebase Firestore, Firebase Cloud Storage, Framer Motion
 
 ### Description
 
